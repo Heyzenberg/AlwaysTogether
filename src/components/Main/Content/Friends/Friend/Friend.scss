@@ -1,0 +1,56 @@
+.Friend{
+    // border: 1px solid red;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(55deg, rgb(193, 233, 233), rgb(159, 233, 233));
+    color: rgb(67, 114, 114);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .photo{
+        border: 2px solid rgb(67, 114, 114);
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .rightField{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .name{
+            // border: 1px solid red;
+            width: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: start;
+        }
+        .btnPanel{
+            // border: 1px solid red;
+            width: 100%;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                border: none;
+                padding: 5px;
+                border-radius: 5px;
+                color: rgb(67, 114, 114);
+                background: rgb(226, 255, 255);
+                transition: 0.1s;
+                &:active{
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+}

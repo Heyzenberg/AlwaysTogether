@@ -1,0 +1,52 @@
+.UserWall{
+    // border: 1px solid red;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(185, 238, 235);
+    .inputField{
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+        input{
+            width: 50%;
+            text-align: center;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 10px;
+            &::placeholder{
+                opacity: 0.6;
+                color: rgb(67, 114, 114);
+            }
+            &:focus::placeholder{
+                visibility: hidden;
+            }
+        }
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgb(67, 114, 114);
+            color: rgb(227, 252, 255);
+            transition: 0.1s;
+            &:active{
+                transform: translateX(2px);
+            }
+        }
+    }
+    .postField{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden auto;
+    }
+}

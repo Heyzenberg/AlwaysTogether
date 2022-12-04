@@ -1,0 +1,82 @@
+.UserInfo{
+    width: 50%;
+    height: 100%;
+    background: rgb(226, 241, 255);
+    display: flex;
+    flex-direction: column;
+    .userName{
+        // border: 1px solid red;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: rgb(67, 114, 114);
+        }
+    }
+    .generalBox{
+        // border: 1px solid red;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        .leftSection{
+            // border: 1px solid red;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .boxPhoto{
+                // border: 1px solid red;
+                width: 90%;
+                height: 50%;
+                border-radius: 10px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .boxLinks{
+                padding: 20px 0;
+                width: 90%;
+                height: 50%;
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(2, auto);
+                a{
+                    // border: 1px solid rgb(67, 114, 114);
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    color: rgb(67, 114, 114);
+                    background: rgb(188, 228, 228);
+                }
+            }
+        }
+        .rightSection{
+            // border: 1px solid red;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .info{
+                // border: 1px solid red;
+                width: 95%;
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: rgb(67, 114, 114);
+                }
+            }
+        }
+    }
+}

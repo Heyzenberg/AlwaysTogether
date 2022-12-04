@@ -12,7 +12,7 @@ const LogIn = () => {
                             <p>E-Mail:</p>
                         </div>
                         <div className='secondBox'>
-                            <input type="text" placeholder='Enter your e-mail...' />
+                            <input type="text" placeholder='Enter your e-mail' maxLength='35' />
                         </div>
                     </div>
                     <div className="innerBox">
@@ -20,7 +20,7 @@ const LogIn = () => {
                             <p>Password:</p>
                         </div>
                         <div className="secondBox">
-                            <input type="text" placeholder='Enter your password' />
+                            <input type="text" placeholder='Enter your password' maxLength='16' />
                         </div>
                     </div>
                     <div className="btnBox">

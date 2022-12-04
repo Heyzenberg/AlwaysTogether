@@ -1,0 +1,70 @@
+.Messages{
+    width: 100%;
+    height: 100%;
+    background: rgb(226, 241, 255);
+    display: flex;
+    .myDialogs{
+        // border: 1px solid red;
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .dialog{
+            border: 1px solid rgb(175, 211, 231);
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+            background: rgb(198, 232, 252);
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            cursor: pointer;
+            .userPhoto{
+                border: 2px solid rgb(67, 114, 114);
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .userName{
+                border: 1px solid rgb(238, 247, 255);
+                height: 100%;
+                width: 75%;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(67, 114, 114);
+                background: rgb(204, 228, 243);
+            }
+            .btnBox{
+                // border: 1px solid red;
+                height: 100%;
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: rgb(67, 114, 114);
+                    background: rgba(0, 0, 0, 0.2);
+                    color: rgb(226, 241, 255);
+                    font-size: 1.4rem;
+                    &:active{
+                        transform: scale(0.97);
+                    }
+                }
+
+            }
+        }
+    }
+}
