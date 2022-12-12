@@ -5,6 +5,7 @@ import { Profile } from './Profile/Profile';
 import { Routes, Route } from 'react-router-dom';
 import { Messages } from './Messages/Messages';
 import { Friends } from './Friends/Friends';
+import { MessagesList } from './Messages/MessageWindow/MessagesList/MessagesList';
 
 const Content = ({myData}) => {
     return(
@@ -13,7 +14,9 @@ const Content = ({myData}) => {
                 <Route path='/' element={<LogIn />} />
                 <Route path='/registration' element={<Registration />} />
                 <Route path='/profile' element={<Profile photo={myData.photo} />} />
-                <Route path='/messages' element={<Messages />} />
+                <Route path='/messages' element={<Messages />}>
+                    <Route path='1' element={<MessagesList />} />
+                </Route>
                 <Route path='/friends' element={<Friends />} />
             </Routes>
         </div>

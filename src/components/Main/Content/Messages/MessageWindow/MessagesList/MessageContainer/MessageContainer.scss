@@ -1,0 +1,19 @@
+.MessageContainer{
+    max-width: 50%;
+    background: linear-gradient(55deg, rgb(146, 216, 248), rgb(81, 139, 187));
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    color: rgb(58, 58, 58);
+    .text{
+        font-weight: 600;
+    }
+    .time{
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+    }
+}
